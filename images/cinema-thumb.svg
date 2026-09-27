@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1400 677" width="1400" height="677">
+  <defs>
+    <linearGradient id="bg2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0f2027"/>
+      <stop offset="50%" stop-color="#203a43"/>
+      <stop offset="100%" stop-color="#4acaa8"/>
+    </linearGradient>
+  </defs>
+  <rect width="1400" height="677" fill="url(#bg2)"/>
+
+  <circle cx="120" cy="100" r="150" fill="#ffffff" opacity="0.05"/>
+  <circle cx="1280" cy="560" r="200" fill="#ffffff" opacity="0.05"/>
+
+  <!-- ticket shape -->
+  <g transform="translate(430,230)">
+    <path d="M20 0 H520 a20 20 0 0 1 20 20 V60 a26 26 0 0 0 0 52 V152 a20 20 0 0 1 -20 20 H20 a20 20 0 0 1 -20 -20 V112 a26 26 0 0 0 0 -52 V20 A20 20 0 0 1 20 0 Z" fill="#ffffff"/>
+    <line x1="420" y1="10" x2="420" y2="182" stroke="#4acaa8" stroke-width="3" stroke-dasharray="8 8"/>
+    <text x="200" y="70" font-family="Helvetica, Arial, sans-serif" font-size="30" font-weight="700" fill="#203a43" text-anchor="middle">ADMIT ONE</text>
+    <text x="200" y="105" font-family="Helvetica, Arial, sans-serif" font-size="18" fill="#203a43" opacity="0.7" text-anchor="middle">Row 4 &#183; Seat 12</text>
+    <text x="470" y="100" font-family="Helvetica, Arial, sans-serif" font-size="40" fill="#4acaa8" text-anchor="middle">&#127916;</text>
+  </g>
+
+  <!-- seat grid dots -->
+  <g fill="#ffffff" opacity="0.55">
+    <circle cx="480" cy="470" r="8"/><circle cx="510" cy="470" r="8"/><circle cx="540" cy="470" r="8"/><circle cx="570" cy="470" r="8"/><circle cx="600" cy="470" r="8"/><circle cx="630" cy="470" r="8"/><circle cx="660" cy="470" r="8"/><circle cx="690" cy="470" r="8"/><circle cx="720" cy="470" r="8"/><circle cx="750" cy="470" r="8"/><circle cx="780" cy="470" r="8"/><circle cx="810" cy="470" r="8"/><circle cx="840" cy="470" r="8"/><circle cx="870" cy="470" r="8"/><circle cx="900" cy="470" r="8"/>
+  </g>
+  <g fill="#4acaa8">
+    <circle cx="600" cy="470" r="8"/><circle cx="690" cy="470" r="8"/>
+  </g>
+
+  <text x="700" y="580" font-family="Helvetica, Arial, sans-serif" font-size="54" font-weight="700" fill="#ffffff" text-anchor="middle">Cinema Ticket System</text>
+  <text x="700" y="625" font-family="Helvetica, Arial, sans-serif" font-size="26" fill="#ffffffcc" text-anchor="middle">ASP.NET Core 9 &#183; React 19 &#183; JWT Auth &#183; MySQL</text>
+</svg>

@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1400 677" width="1400" height="677">
+  <defs>
+    <linearGradient id="bg1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#3a1c71"/>
+      <stop offset="50%" stop-color="#5b3a9b"/>
+      <stop offset="100%" stop-color="#4acaa8"/>
+    </linearGradient>
+  </defs>
+  <rect width="1400" height="677" fill="url(#bg1)"/>
+
+  <!-- decorative circles -->
+  <circle cx="1230" cy="120" r="160" fill="#ffffff" opacity="0.06"/>
+  <circle cx="140" cy="580" r="220" fill="#ffffff" opacity="0.05"/>
+
+  <!-- document icon -->
+  <g transform="translate(160,190)">
+    <rect x="0" y="0" width="220" height="280" rx="14" fill="#ffffff" opacity="0.95"/>
+    <rect x="30" y="40" width="160" height="14" rx="7" fill="#5b3a9b" opacity="0.55"/>
+    <rect x="30" y="70" width="160" height="14" rx="7" fill="#5b3a9b" opacity="0.35"/>
+    <rect x="30" y="100" width="110" height="14" rx="7" fill="#5b3a9b" opacity="0.35"/>
+    <rect x="30" y="150" width="160" height="14" rx="7" fill="#5b3a9b" opacity="0.2"/>
+    <rect x="30" y="180" width="160" height="14" rx="7" fill="#5b3a9b" opacity="0.2"/>
+    <rect x="30" y="210" width="90" height="14" rx="7" fill="#5b3a9b" opacity="0.2"/>
+  </g>
+
+  <!-- chat bubble with sparkle (RAG / AI answer) -->
+  <g transform="translate(330,300)">
+    <path d="M0 40 Q0 0 40 0 L230 0 Q270 0 270 40 L270 140 Q270 180 230 180 L70 180 L20 220 L28 180 L40 180 Q0 180 0 140 Z" fill="#ffffff"/>
+    <circle cx="60" cy="70" r="10" fill="#4acaa8"/>
+    <circle cx="110" cy="70" r="10" fill="#3a1c71"/>
+    <circle cx="160" cy="70" r="10" fill="#5b3a9b"/>
+    <rect x="45" y="110" width="180" height="10" rx="5" fill="#3a1c71" opacity="0.25"/>
+    <rect x="45" y="132" width="130" height="10" rx="5" fill="#3a1c71" opacity="0.25"/>
+  </g>
+
+  <text x="700" y="580" font-family="Helvetica, Arial, sans-serif" font-size="54" font-weight="700" fill="#ffffff" text-anchor="middle">PDF Q&amp;A Assistant</text>
+  <text x="700" y="625" font-family="Helvetica, Arial, sans-serif" font-size="26" fill="#ffffffcc" text-anchor="middle">Retrieval-Augmented Generation &#183; FastAPI &#183; Groq &#183; Gemini Embeddings</text>
+</svg>

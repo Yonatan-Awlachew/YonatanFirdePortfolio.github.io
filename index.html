@@ -1,171 +1,204 @@
-<!DOCTYPE HTML>
-<!--
-	Read Only by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>Yonatan Firde — Backend Developer &amp; Data Analyst</title>
+	<meta name="description" content="Yonatan Firde — Computer Science student and aspiring backend developer. Full-stack projects (ASP.NET Core, React, FastAPI) and data analysis work (SQL, Python, Tableau)." />
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="assets/css/styles.css" />
+	<script>
+		// Applied before paint to avoid a flash of the wrong theme.
+		(function () {
+			try {
+				var saved = localStorage.getItem('theme');
+				var prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+				if (saved === 'dark' || (!saved && prefersDark)) {
+					document.documentElement.classList.add('dark');
+				}
+			} catch (e) {}
+		})();
+	</script>
+</head>
+<body class="font-sans antialiased">
 
-	Customized by Yonatan Firde: reworked content, dark/light mode toggle,
-	typewriter tagline, scroll-reveal animations, 4-project showcase and a
-	mailto-based contact form on top of the original template.
--->
-<html>
-	<head>
-		<title>Yonatan Firde — Backend Developer &amp; Data Analyst Portfolio</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<meta name="description" content="Yonatan Firde — Computer Science student and aspiring backend developer. Full-stack projects (ASP.NET Core, React, FastAPI) and data analysis work (SQL, Python, Tableau)." />
-		<link rel="stylesheet" href="assets/css/main.css" />
-		<link rel="stylesheet" href="assets/css/custom.css" />
-	</head>
-	<body class="is-preload">
+	<!-- Theme toggle -->
+	<button id="theme-toggle" type="button" aria-label="Toggle dark mode"
+		class="fixed top-4 right-4 sm:top-6 sm:right-6 z-50 w-10 h-10 rounded-full flex items-center justify-center
+			bg-white dark:bg-gray-800 text-gray-700 dark:text-gray-200 shadow-md border border-gray-200 dark:border-gray-700
+			hover:shadow-lg transition-all">
+		<svg id="icon-moon" class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z"/></svg>
+		<svg id="icon-sun" class="w-5 h-5 hidden" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0zm-.464 4.95l.707.707a1 1 0 001.414-1.414l-.707-.707a1 1 0 00-1.414 1.414zm2.12-10.607a1 1 0 010 1.414l-.706.707a1 1 0 11-1.414-1.414l.707-.707a1 1 0 011.414 0zM17 11a1 1 0 100-2h-1a1 1 0 100 2h1zM5.05 6.464A1 1 0 106.465 5.05l-.708-.707a1 1 0 00-1.414 1.414l.707.707zm1.414 8.486l-.707.707a1 1 0 01-1.414-1.414l.707-.707a1 1 0 011.414 1.414zM4 11a1 1 0 100-2H3a1 1 0 000 2h1z" clip-rule="evenodd"/></svg>
+	</button>
 
-		<!-- Header -->
-			<section id="header">
-				<header>
-					<span class="image avatar"><img src="images/photo.jpg" alt="" /></span>
-					<h1 id="logo"><a href="#">Yonatan Firde</a></h1>
-					<p><span id="tagline">Computer Science Student</span></p>
-				</header>
-				<nav id="nav">
-					<ul>
-						<li><a href="#one" class="active">About</a></li>
-						<li><a href="#two">Skills</a></li>
-						<li><a href="#three">Projects</a></li>
-						<li><a href="#four">Contact</a></li>
-					</ul>
-				</nav>
-				<footer>
-					<ul class="icons">
-						<li><a href="https://www.linkedin.com/in/yonatan-awlachew-firde-78ab4b236?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3Bu5DweTagSEKzsAajZQKX6A%3D%3D" class="fab fa-linkedin"><span class="label">LinkedIn</span></a></li>
-						<li><a href="https://github.com/Yonatan-Awlachew" class="icon brands fa-github"><span class="label">Github</span></a></li>
-						<li><a href="https://www.kaggle.com/yonatanawlachewf" class="icon brands fa-kaggle"><span class="label">Kaggle</span></a></li>
-						<li><a href="mailto:yonatanawlachew1@gmail.com" class="icon solid fa-envelope"><span class="label">Email</span></a></li>
-						<li><a href="#" id="theme-toggle" class="icon solid fa-moon" title="Toggle dark / light mode"><span class="label">Toggle theme</span></a></li>
-					</ul>
-				</footer>
-			</section>
+	<main class="min-h-screen bg-white dark:bg-gray-900 pt-12 transition-colors duration-300">
 
-		<!-- Wrapper -->
-			<div id="wrapper">
+		<!-- Hero -->
+		<section class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-12 sm:py-20">
+			<div class="text-center">
+				<div class="mb-6 sm:mb-8">
+					<img src="images/photo.jpg" alt="Yonatan Firde" width="120" height="120"
+						class="rounded-full mx-auto border-4 border-gray-50 dark:border-gray-700 shadow-lg w-[120px] h-[120px] object-cover" />
+				</div>
+				<h1 class="text-3xl sm:text-4xl font-bold text-gray-900 dark:text-white mb-3 sm:mb-4">Yonatan Firde</h1>
+				<p class="text-lg sm:text-xl text-gray-600 dark:text-gray-300 mb-6 sm:mb-8">Computer Science Student &amp; Aspiring Backend Developer</p>
+				<p class="text-gray-600 dark:text-gray-400 max-w-2xl mx-auto text-sm sm:text-base px-4">
+					I build reliable backend systems and data-driven applications — from REST APIs secured with JWT
+					to full-stack apps with React front ends. Also experienced in SQL, Python, and Tableau for data analysis.
+				</p>
+			</div>
+		</section>
 
-				<!-- Main -->
-					<div id="main">
+		<!-- Skills -->
+		<section class="bg-gray-50 dark:bg-gray-800 py-12 sm:py-20 transition-colors duration-300">
+			<div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+				<h2 class="text-xl sm:text-2xl font-bold text-gray-900 dark:text-white mb-6 sm:mb-8 text-center">Skills &amp; Technologies</h2>
+				<div class="grid grid-cols-2 sm:grid-cols-3 gap-3 sm:gap-4">
+					<div class="reveal bg-white dark:bg-gray-700 text-gray-900 dark:text-gray-200 p-4 sm:p-6 rounded-lg shadow-sm text-center hover:shadow-md dark:hover:shadow-gray-500 transition-shadow text-sm sm:text-base">ASP.NET Core</div>
+					<div class="reveal bg-white dark:bg-gray-700 text-gray-900 dark:text-gray-200 p-4 sm:p-6 rounded-lg shadow-sm text-center hover:shadow-md dark:hover:shadow-gray-500 transition-shadow text-sm sm:text-base">FastAPI</div>
+					<div class="reveal bg-white dark:bg-gray-700 text-gray-900 dark:text-gray-200 p-4 sm:p-6 rounded-lg shadow-sm text-center hover:shadow-md dark:hover:shadow-gray-500 transition-shadow text-sm sm:text-base">React</div>
+					<div class="reveal bg-white dark:bg-gray-700 text-gray-900 dark:text-gray-200 p-4 sm:p-6 rounded-lg shadow-sm text-center hover:shadow-md dark:hover:shadow-gray-500 transition-shadow text-sm sm:text-base">JWT Auth</div>
+					<div class="reveal bg-white dark:bg-gray-700 text-gray-900 dark:text-gray-200 p-4 sm:p-6 rounded-lg shadow-sm text-center hover:shadow-md dark:hover:shadow-gray-500 transition-shadow text-sm sm:text-base">MySQL</div>
+					<div class="reveal bg-white dark:bg-gray-700 text-gray-900 dark:text-gray-200 p-4 sm:p-6 rounded-lg shadow-sm text-center hover:shadow-md dark:hover:shadow-gray-500 transition-shadow text-sm sm:text-base">Python</div>
+					<div class="reveal bg-white dark:bg-gray-700 text-gray-900 dark:text-gray-200 p-4 sm:p-6 rounded-lg shadow-sm text-center hover:shadow-md dark:hover:shadow-gray-500 transition-shadow text-sm sm:text-base">SQL</div>
+					<div class="reveal bg-white dark:bg-gray-700 text-gray-900 dark:text-gray-200 p-4 sm:p-6 rounded-lg shadow-sm text-center hover:shadow-md dark:hover:shadow-gray-500 transition-shadow text-sm sm:text-base">Git &amp; GitHub</div>
+					<div class="reveal bg-white dark:bg-gray-700 text-gray-900 dark:text-gray-200 p-4 sm:p-6 rounded-lg shadow-sm text-center hover:shadow-md dark:hover:shadow-gray-500 transition-shadow text-sm sm:text-base">Tableau</div>
+				</div>
+			</div>
+		</section>
 
-						<!-- One -->
-							<section id="one">
-								<div class="image main" data-position="center">
-									<img src="images/banner.jpg" alt="" />
-								</div>
-								<div class="container">
-									<header class="major">
-										<h2>Hi, I'm Yonatan Firde 👋</h2>
-										<p>Computer Science student passionate about backend development and building data-driven, full-stack systems.</p>
-									</header>
-									<p>Below is a mix of full-stack applications and data analysis work — from a Retrieval-Augmented Generation API to an end-to-end cinema booking platform, alongside SQL, Python and Tableau projects.</p>
-								</div>
-							</section>
+		<!-- Projects -->
+		<section class="py-12 sm:py-20">
+			<div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+				<h2 class="text-xl sm:text-2xl font-bold text-gray-900 dark:text-white mb-6 sm:mb-8 text-center">Featured Projects</h2>
+				<div class="grid grid-cols-1 sm:grid-cols-2 gap-6 sm:gap-8">
 
-						<!-- Two -->
-							<section id="two">
-								<div class="container">
-									<h3>Things I Can Do</h3>
-									<p>I'm a Computer Science student at the University of Messina, currently focused on backend development and building reliable APIs — with a solid foundation in data analysis as well.</p>
-									<ul class="feature-icons">
-										<li class="icon solid fa-server reveal">REST APIs with ASP.NET Core &amp; FastAPI</li>
-										<li class="icon solid fa-lock reveal delay-1">JWT Authentication &amp; Security</li>
-										<li class="icon brands fa-react reveal delay-2">React &amp; Modern Frontend</li>
-										<li class="icon solid fa-database reveal delay-3">SQL &amp; Relational Databases</li>
-										<li class="icon solid fa-code reveal delay-4">Data Cleaning with Python</li>
-										<li class="icon solid fa-cubes reveal">Tableau Dashboards</li>
-										<li class="icon solid fa-book reveal delay-1">Cluster Analysis</li>
-										<li class="icon solid fa-coffee reveal delay-2">Classification Models</li>
-									</ul>
-								</div>
-							</section>
-
-						<!-- Three -->
-							<section id="three">
-								<div class="container">
-									<h3>Some of the Projects Done</h3>
-									<p></p>
-									<div class="features">
-										<article class="reveal">
-											<a href="https://github.com/Yonatan-Awlachew/doc-qa-assistant" class="image"><img src="images/docqa-thumb.svg" alt="PDF Q&amp;A Assistant thumbnail" /></a>
-											<div class="inner">
-												<span class="featured-badge">Featured</span>
-												<h4>PDF Q&amp;A Assistant (RAG API)</h4>
-												<p>A Retrieval-Augmented Generation API that answers natural-language questions about PDF documents with source citations. Built with FastAPI, Groq for fast LLM inference, and Gemini embeddings, backed by a pytest test suite.</p>
-											</div>
-										</article>
-										<article class="reveal delay-1">
-											<a href="https://github.com/Yonatan-Awlachew/CinemaTicketSystem" class="image"><img src="images/cinema-thumb.svg" alt="Cinema Ticket System thumbnail" /></a>
-											<div class="inner">
-												<h4>Cinema Ticket Booking System</h4>
-												<p>A full-stack seat-booking platform: an ASP.NET Core 9 Web API secured with JWT authentication and Entity Framework Core/MySQL, paired with a React 19 single-page frontend. Seat reservations are protected against double-booking at the database level, with optimistic concurrency control on profile edits.</p>
-											</div>
-										</article>
-										<article class="reveal delay-2">
-											<a href="https://github.com/Yonatan-Awlachew/DataMining-Project" class="image"><img src="images/Datamining_image.png" alt="" /></a>
-											<div class="inner">
-												<h4>Data Mining Project</h4>
-												<p>
-													This project focuses on modeling and analyzing Italy's agricultural economy from 1980 to 2023, leveraging machine learning and data mining techniques to uncover valuable insights.
-												</p>
-											</div>
-										</article>
-										<article class="reveal delay-3">
-											<a href="https://github.com/Yonatan-Awlachew/Global-Superstore-Data_Cleaning_and_Visualization-Project" class="image"><img src="images/Data_cleaning_Image.png" alt="" /></a>
-											<div class="inner">
-												<h4>Data Cleaning Using SQL and Python</h4>
-												<p>This project analyzes sales and profitability trends in the Global Superstore dataset (2011–2014), covering 147 countries. Using Python for data cleaning, SQL for querying. <a href="https://public.tableau.com/views/GlobalSuperStoreVisualization_17414888442700/MainDASHBOARD?:language=en-GB&amp;:sid=&amp;:redirect=auth&amp;:display_count=n&amp;:origin=viz_share_link">View the live Tableau dashboard &rarr;</a></p>
-											</div>
-										</article>
-									</div>
-								</div>
-							</section>
-
-						<!-- Four -->
-							<section id="four">
-								<div class="container">
-									<h3>Contact Me</h3>
-									<p>Have a question, an opportunity, or just want to say hi? Send a message below.</p>
-									<form id="contact-form" method="post" action="#">
-										<div class="row gtr-uniform">
-											<div class="col-6 col-12-xsmall"><input type="text" name="name" id="name" placeholder="Name" required /></div>
-											<div class="col-6 col-12-xsmall"><input type="email" name="email" id="email" placeholder="Email" required /></div>
-											<div class="col-12"><input type="text" name="subject" id="subject" placeholder="Subject" /></div>
-											<div class="col-12"><textarea name="message" id="message" placeholder="Message" rows="6" required></textarea></div>
-											<div class="col-12">
-												<ul class="actions">
-													<li><input type="submit" class="primary" value="Send Message" /></li>
-													<li><input type="reset" value="Reset Form" /></li>
-												</ul>
-												<p class="form-note">Opens your email app with this message pre-filled — nothing is sent from this page directly.</p>
-											</div>
-										</div>
-									</form>
-								</div>
-							</section>
-
+					<!-- Project 1: PDF Q&A Assistant (featured) -->
+					<div class="reveal bg-white dark:bg-gray-800 rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-shadow relative">
+						<span class="absolute top-3 left-3 z-10 bg-teal-600 text-white text-xs font-bold uppercase tracking-wide px-2.5 py-1 rounded-full">Featured</span>
+						<div class="aspect-video bg-gray-100 dark:bg-gray-700 relative overflow-hidden">
+							<img src="images/docqa-thumb.svg" alt="PDF Q&amp;A Assistant" class="absolute inset-0 w-full h-full object-cover" />
+						</div>
+						<div class="p-4 sm:p-6">
+							<h3 class="text-base sm:text-lg font-semibold text-gray-900 dark:text-white mb-2">PDF Q&amp;A Assistant (RAG API)</h3>
+							<p class="text-sm sm:text-base text-gray-600 dark:text-gray-300 mb-4">A Retrieval-Augmented Generation API that answers natural-language questions about PDF documents with source citations. Built with FastAPI, Groq, and Gemini embeddings.</p>
+							<div class="flex gap-2">
+								<a href="https://github.com/Yonatan-Awlachew/doc-qa-assistant" target="_blank" rel="noopener noreferrer" class="text-blue-600 dark:text-blue-400 hover:text-blue-800 dark:hover:text-blue-300 font-medium text-sm sm:text-base">View Project &rarr;</a>
+							</div>
+						</div>
 					</div>
 
-				<!-- Footer -->
+					<!-- Project 2: Cinema Ticket System -->
+					<div class="reveal bg-white dark:bg-gray-800 rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-shadow">
+						<div class="aspect-video bg-gray-100 dark:bg-gray-700 relative overflow-hidden">
+							<img src="images/cinema-thumb.svg" alt="Cinema Ticket Booking System" class="absolute inset-0 w-full h-full object-cover" />
+						</div>
+						<div class="p-4 sm:p-6">
+							<h3 class="text-base sm:text-lg font-semibold text-gray-900 dark:text-white mb-2">Cinema Ticket Booking System</h3>
+							<p class="text-sm sm:text-base text-gray-600 dark:text-gray-300 mb-4">Full-stack seat-booking platform: an ASP.NET Core 9 Web API with JWT auth, EF Core/MySQL, and a React 19 frontend. Database-level double-booking prevention and optimistic concurrency control.</p>
+							<div class="flex gap-2">
+								<a href="https://github.com/Yonatan-Awlachew/CinemaTicketSystem" target="_blank" rel="noopener noreferrer" class="text-blue-600 dark:text-blue-400 hover:text-blue-800 dark:hover:text-blue-300 font-medium text-sm sm:text-base">View Project &rarr;</a>
+							</div>
+						</div>
+					</div>
 
+					<!-- Project 3: Data Mining Project -->
+					<div class="reveal bg-white dark:bg-gray-800 rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-shadow">
+						<div class="aspect-video bg-gray-100 dark:bg-gray-700 relative overflow-hidden">
+							<img src="images/Datamining_image.png" alt="Data Mining Project" class="absolute inset-0 w-full h-full object-cover" />
+						</div>
+						<div class="p-4 sm:p-6">
+							<h3 class="text-base sm:text-lg font-semibold text-gray-900 dark:text-white mb-2">Data Mining Project</h3>
+							<p class="text-sm sm:text-base text-gray-600 dark:text-gray-300 mb-4">Modeled and analyzed Italy's agricultural economy (1980–2023) using classification and clustering techniques, achieving 85%+ accuracy in economic pattern prediction.</p>
+							<div class="flex gap-2">
+								<a href="https://github.com/Yonatan-Awlachew/DataMining-Project" target="_blank" rel="noopener noreferrer" class="text-blue-600 dark:text-blue-400 hover:text-blue-800 dark:hover:text-blue-300 font-medium text-sm sm:text-base">View Project &rarr;</a>
+							</div>
+						</div>
+					</div>
 
+					<!-- Project 4: Data Cleaning & Visualization -->
+					<div class="reveal bg-white dark:bg-gray-800 rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-shadow">
+						<div class="aspect-video bg-gray-100 dark:bg-gray-700 relative overflow-hidden">
+							<img src="images/Data_cleaning_Image.png" alt="Data Cleaning and Visualization" class="absolute inset-0 w-full h-full object-cover" />
+						</div>
+						<div class="p-4 sm:p-6">
+							<h3 class="text-base sm:text-lg font-semibold text-gray-900 dark:text-white mb-2">Data Cleaning &amp; Visualization</h3>
+							<p class="text-sm sm:text-base text-gray-600 dark:text-gray-300 mb-4">Cleaned and analyzed the Global Superstore dataset (2011–2014, 147 countries) with Python and SQL, then built an interactive Tableau dashboard of the results.</p>
+							<div class="flex gap-2">
+								<a href="https://github.com/Yonatan-Awlachew/Global-Superstore-Data_Cleaning_and_Visualization-Project" target="_blank" rel="noopener noreferrer" class="text-blue-600 dark:text-blue-400 hover:text-blue-800 dark:hover:text-blue-300 font-medium text-sm sm:text-base">View Project &rarr;</a>
+							</div>
+						</div>
+					</div>
+
+				</div>
 			</div>
+		</section>
 
-		<!-- Back to top -->
-			<a href="#header" id="scrollTop" class="scrolly" title="Back to top"><i class="fas fa-arrow-up"></i></a>
+		<!-- Contact -->
+		<section class="py-16 px-4 border-t border-gray-100 dark:border-gray-800 transition-colors duration-300">
+			<div class="max-w-2xl mx-auto">
+				<div class="reveal text-center space-y-6">
+					<h2 class="text-2xl font-semibold text-gray-900 dark:text-white">Contact</h2>
+					<p class="text-gray-600 dark:text-gray-300">Interested in working together? Let's have a conversation.</p>
 
-		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/jquery.scrollex.min.js"></script>
-			<script src="assets/js/jquery.scrolly.min.js"></script>
-			<script src="assets/js/browser.min.js"></script>
-			<script src="assets/js/breakpoints.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
-			<script src="assets/js/custom.js"></script>
+					<!-- Location -->
+					<div class="flex items-center justify-center gap-2 text-gray-600 dark:text-gray-300">
+						<svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+							<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/>
+							<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/>
+						</svg>
+						<span>Messina, Italy</span>
+					</div>
 
-	</body>
+					<!-- Contact buttons -->
+					<div class="flex flex-col sm:flex-row justify-center gap-4">
+						<a href="mailto:yonatanawlachew1@gmail.com"
+							class="px-6 py-2 bg-blue-600 text-white font-medium rounded hover:bg-blue-700 transition-colors inline-flex items-center justify-center gap-2">
+							<svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
+								<path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z"/>
+								<path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z"/>
+							</svg>
+							Get in Touch
+						</a>
+						<a href="resume.pdf" target="_blank" rel="noopener noreferrer"
+							class="px-6 py-2 border border-gray-300 dark:border-gray-600 text-gray-700 dark:text-gray-300 font-medium rounded hover:bg-gray-50 dark:hover:bg-gray-800 transition-colors inline-flex items-center justify-center gap-2">
+							<svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
+								<path fill-rule="evenodd" d="M4 4a2 2 0 012-2h4.586A2 2 0 0112 2.586L15.414 6A2 2 0 0116 7.414V16a2 2 0 01-2 2H6a2 2 0 01-2-2V4z" clip-rule="evenodd"/>
+								<path fill-rule="evenodd" d="M8 11a1 1 0 100 2h4a1 1 0 100-2H8zm0-4a1 1 0 100 2h4a1 1 0 100-2H8z" clip-rule="evenodd"/>
+							</svg>
+							View Resume
+						</a>
+					</div>
+
+					<!-- Social links -->
+					<div class="flex justify-center gap-6">
+						<a href="https://github.com/Yonatan-Awlachew" target="_blank" rel="noopener noreferrer" aria-label="GitHub" class="text-gray-400 hover:text-gray-900 dark:hover:text-white transition-colors">
+							<svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+						</a>
+						<a href="https://www.linkedin.com/in/yonatan-awlachew-firde-78ab4b236" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" class="text-gray-400 hover:text-blue-600 dark:hover:text-blue-400 transition-colors">
+							<svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+						</a>
+						<a href="https://www.kaggle.com/yonatanawlachewf" target="_blank" rel="noopener noreferrer" aria-label="Kaggle" class="text-gray-400 hover:text-sky-500 transition-colors">
+							<svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M.1025 7.3475c-.0681 0-.1022.0341-.1022.102v6.752c0 .0681.034.1022.1022.1022h.7049c.068 0 .1022-.034.1022-.1023v-1.481l.4187-.3985 1.5016 1.91c.041.0477.0884.0716.143.0716h.9091c.0476 0 .0748-.0135.0817-.0407.0135-.041.0066-.075-.0206-.1023l-1.9816-2.4618 1.9002-1.8384c.0204-.0205.0237-.051.01-.092-.0137-.0339-.0408-.051-.0816-.051h-.9398c-.0477 0-.0953.024-.143.0716L.9096 11.607V7.4496c0-.0679-.0342-.102-.1022-.102zm18.0417 0c-.068 0-.102.0341-.102.102v6.752c0 .0681.034.102.102.102h.705c.068 0 .102-.034.102-.102v-6.752c0-.068-.034-.102-.102-.102zM5.961 9.6254c-.5653 0-1.11.1806-1.6343.5415-.0545.0545-.0648.102-.0307.143l.3676.5208c.0272.0477.0717.0545.133.0204.3948-.2722.783-.4086 1.1644-.4086.2927 0 .5158.0886.669.2656.1532.1771.2197.3917.1992.6436-.6606.0681-1.1545.1495-1.4813.245-.8308.2383-1.2461.6913-1.2461 1.3586 0 .4222.1533.7695.4598 1.0419.3132.2654.6845.3982 1.1134.3982.4698 0 .8545-.1125 1.1542-.3372v.1432c0 .0682.0374.102.1123.102h.7048c.068 0 .102-.0338.102-.102V11.372c0-.6604-.2245-1.1406-.6739-1.4403-.3065-.2043-.6776-.3063-1.1134-.3063zm4.3225 0c-.6742 0-1.195.2622-1.5627.7865-.3133.4359-.4699.9671-.4699 1.5936 0 .6604.1634 1.2087.4903 1.6444.3744.4972.892.7455 1.5526.7455.5313 0 .9567-.1327 1.2768-.3982v.531c0 .858-.4122 1.287-1.236 1.287-.361 0-.732-.1907-1.1132-.572a.098.098 0 00-.0716-.0306c-.034 0-.0613.0102-.0817.0307l-.4802.48c-.0408.0613-.0375.1124.0103.1532.1361.1157.2554.2129.3576.2911.102.0783.1905.1413.2656.189.354.1975.7284.2961 1.1235.2961.6808 0 1.207-.1925 1.5781-.577.3711-.3848.5567-.9484.5567-1.6903V9.8196c0-.068-.034-.102-.102-.102h-.705c-.0682 0-.1021.034-.1021.102v.2043c-.3471-.2657-.7763-.3985-1.287-.3985zm4.8021 0c-.6742 0-1.195.2622-1.5627.7865-.3132.4359-.4699.9671-.4699 1.5936 0 .6604.1633 1.2087.4903 1.6444.3744.4972.892.7455 1.5526.7455.5311 0 .9566-.1327 1.2768-.3982v.531c0 .858-.4122 1.287-1.236 1.287-.361 0-.732-.1907-1.1133-.572a.098.098 0 00-.0716-.0306c-.034 0-.0612.0102-.0816.0307l-.48.48c-.0409.0613-.0376.1124.01.1532.1363.1157.2555.2129.3576.2911.1021.0783.1906.1413.2657.189.354.1975.7285.2961 1.1237.2961.6808 0 1.2068-.1925 1.5781-.577.371-.3848.5565-.9484.5565-1.6903V9.8196c0-.068-.034-.102-.102-.102h-.7049c-.0682 0-.1022.034-.1022.102v.2043c-.3474-.2657-.7763-.3985-1.287-.3985zm6.7457 0c-.6537 0-1.185.211-1.5936.6332-.4427.4632-.664 1.0283-.664 1.6956 0 .7083.225 1.2905.6743 1.7467.463.463 1.042.6945 1.7366.6945.6467 0 1.2154-.1838 1.7057-.5515.0545-.041.0545-.0884 0-.143l-.4802-.4903c-.041-.0409-.0919-.0409-.1533 0-.2998.2112-.6368.3167-1.0112.3167-.4222 0-.7729-.119-1.052-.3576-.2452-.2248-.3882-.5038-.429-.8375h3.3197c.0679 0 .1022-.0341.1022-.1023l.01-.2244c.0341-.6878-.1668-1.26-.6025-1.7162-.4224-.4426-.9432-.664-1.5627-.664zm-.0206.7865c.3268 0 .6062.1056.8377.3166.2452.211.371.4734.378.7865h-2.4618c.0613-.3269.2077-.5925.4392-.7968.2313-.2042.5004-.3063.8069-.3063zm-11.4249.102c.6196 0 1.0146.2181 1.1848.6538v1.6854c-.1702.4358-.5755.6538-1.2155.6538-.3133 0-.5687-.0986-.7661-.2963-.2656-.2518-.3983-.6538-.3983-1.2053 0-.9941.3984-1.4914 1.1951-1.4914zm4.802 0c.6196 0 1.0148.2181 1.1851.6538h-.0002v1.6854c-.1703.4358-.5755.6538-1.2155.6538-.3132 0-.5686-.0986-.7661-.2963-.2655-.2518-.3983-.6538-.3983-1.2053 0-.9941.3983-1.4914 1.195-1.4914zm-8.3586 1.6547v1.0215c-.286.286-.6675.412-1.1441.3779-.1703-.0135-.32-.0663-.4493-.1582-.1294-.0919-.2045-.2129-.2249-.3627-.0341-.2657.1158-.47.4495-.6129.2452-.1088.7013-.1974 1.3688-.2656z"/></svg>
+						</a>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- Footer -->
+		<footer class="py-6 text-center text-xs text-gray-400 dark:text-gray-600 border-t border-gray-100 dark:border-gray-800">
+			<p>&copy; 2026 Yonatan Firde. Design based on the open-source
+				<a href="https://www.devportfoliotemplates.com/portfolio-templates/simple" target="_blank" rel="noopener noreferrer" class="underline hover:text-gray-600 dark:hover:text-gray-400">Simple</a>
+				/
+				<a href="https://www.devportfoliotemplates.com/portfolio-templates/simple-dark" target="_blank" rel="noopener noreferrer" class="underline hover:text-gray-600 dark:hover:text-gray-400">Simple Dark</a>
+				templates by devportfoliotemplates (MIT License).</p>
+		</footer>
+
+	</main>
+
+	<script src="assets/js/main.js"></script>
+</body>
 </html>

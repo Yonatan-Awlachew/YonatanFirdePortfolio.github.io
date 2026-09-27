@@ -4,13 +4,16 @@ My personal portfolio: a Computer Science student and aspiring backend developer
 
 ## About the Website
 
-A single-page site built on the [HTML5 UP "Read Only"](https://html5up.net/read-only) template, customized with:
-- A typewriter-effect tagline cycling through "Computer Science Student", "Aspiring Backend Developer", "Data & Full-Stack Enthusiast"
+A single-page site based on the open-source [Simple](https://www.devportfoliotemplates.com/portfolio-templates/simple) /
+[Simple Dark](https://www.devportfoliotemplates.com/portfolio-templates/simple-dark) portfolio templates by
+[devportfoliotemplates](https://github.com/devportfoliotemplates/devportfoliotemplates) (MIT License). The two templates'
+Tailwind designs were merged into one static page with a real light/dark toggle, rebuilt as plain HTML + compiled Tailwind
+CSS (no Next.js/build step needed to deploy — just static files, same as before), with:
 - Dark / light mode toggle (persisted per visitor, respects OS preference by default)
-- Scroll-reveal animations on skills and project cards
-- A "Back to top" button
-- A working contact form (opens the visitor's email client pre-filled — no backend required)
+- Scroll-reveal animations on skills and project cards, via `IntersectionObserver`
 - Four featured projects: a RAG API, a full-stack booking system, and two data analysis projects
+- A "View Resume" link to `resume.pdf` and a "Get in Touch" mailto button
+- GitHub, LinkedIn, and Kaggle social links
 
 ## Projects Featured
 
@@ -24,11 +27,19 @@ A single-page site built on the [HTML5 UP "Read Only"](https://html5up.net/read-
 
 ## Local Development
 
-Static site, no build step required:
+Static site — no build step needed just to view it:
 
 ```bash
 python3 -m http.server 8000
 # open http://localhost:8000
+```
+
+`assets/css/styles.css` is a **compiled, purged Tailwind CSS file** — it only contains the utility classes actually used in `index.html`. If you add a new Tailwind class to the HTML, it won't render until you recompile:
+
+```bash
+npm install
+npm run build:css      # one-off rebuild
+npm run watch:css      # rebuild on every save while editing
 ```
 
 ## Connect with Me
